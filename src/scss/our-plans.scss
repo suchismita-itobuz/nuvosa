@@ -1,0 +1,110 @@
+.our-plans{
+  background-color: $background-grey;
+}
+.pricing-card {
+  text-align: center;
+  border: 1px solid $background-grey;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  transition: all 0.3s;
+  @include design-screen{
+    width: 372px;
+    height: 523px;
+  }
+.our-plans-col-last{
+ 
+  @media (min-width:992px){
+  margin: 0px!important;
+  margin-bottom: 16px !important;
+  }
+}
+  
+}
+.our-plans-row{
+  gap: 2rem;
+  justify-content: center;
+  padding-bottom: 95px!important;
+  @include design-screen{
+    gap: 10px;
+    
+  }
+}
+.pricing-card:hover {
+  background: url(../images/design/card-hover.svg) no-repeat center;
+  background-size: stretch;
+  transform: scale(1.05);
+  color: white;
+  box-shadow: 0px 26px 42px 0px #02160514;
+
+  .pricing-card__text{
+    color: white;
+  }
+  .pricing-card__title{
+    color: white;
+  }
+}
+
+
+.pricing-card .btn {
+ 
+  background-color: white;
+  color: #000;
+  border: 1px solid black;
+  border-radius: 5%;
+  margin-bottom: 79.12px;
+  transition: all 0.3ms;
+  padding: 11.44px 22.88px;
+}
+
+.pricing-card .btn:hover {
+  background-color: #FAD725;
+  color: black;
+}
+
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.row-cols-1 .col {
+  margin-bottom: 1rem;
+}
+
+.our-plans__wrapper--title{
+  @include section-headings;
+  padding-top: 53px;
+  margin-bottom: 9px;
+}
+.our-plans__wrapper--text{
+  @include subtext;
+  margin-bottom: 57px;
+}
+.pricing-card__title{
+  @include pricing_title;
+  margin-top: 65px;
+}
+.pricing-card__subheading{
+  font-weight: 600;
+  font-size: 15px;
+  sup{
+    font-size: 16px;
+  }
+  span{
+    font-size: 49px;
+  }
+}
+.pricing-card__text{
+  @include subtext;
+  margin-bottom: 10px!important;
+  margin-top: 0!important;
+}
+.pricing-btn{
+  margin-top: 42px!important;
+  @include design-screen{
+  border-radius: 5%!important;
+  }
+}
+.pricing-card__text--last{
+  margin-bottom: 0px!important;
+}

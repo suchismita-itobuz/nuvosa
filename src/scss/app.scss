@@ -1,26 +1,24 @@
-/* By Athlon Front-End Team */
+@import 'mixin';
 
-/* Core variables */
-@import 'base/vars';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* CSS Reset */
-@import 'base/reset';
+body {
+  @media (max-width: 991px) {
+    margin: 0 20px !important;
+  }
+}
 
-/* CSS print */
-@import 'base/print';
-
-/* Fonts */
-@import 'base/fonts';
-
-/* Mixins, helpers and functions */
-@import 'base/mixins';
-
-/* Vendor */
-
-/* Components */
-
-/* Browser specific styles */
-@import 'dirty/hacks';
-
-/* Demo Page styles */
-@import 'demo';
+@import 'nav';
+@import 'hero';
+@import 'our-services';
+@import 'optimising';
+@import 'perfect-solution';
+@import 'grow';
+@import 'why-choose';
+@import 'seo';
+@import 'our-plans';
+@import 'members';

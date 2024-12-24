@@ -1,0 +1,100 @@
+@mixin section-headings {
+    color: #212528;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    span {
+        color: #6F77F1;
+    }
+
+    @media(min-width:1440px) {
+        font-weight: 500;
+        font-size: 55px;
+    }
+}
+
+@mixin button {
+    background-color: #FAD725 !important;
+
+    @media(max-width:374px) {
+        min-width: 120px;
+    }
+
+    @media(min-width:992px) {
+        padding: 10px 20px;
+    }
+
+    @media(min-width:1440px) {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-size: 24px;
+        font-style: normal;
+    }
+
+    @media(min-width:1920px) {
+        padding: 20px 40px;
+    }
+
+    &:hover {
+        background-color: #ffbc1f !important;
+    }
+
+    @media(min-width:1660px) {
+        font-size: 24px;
+    }
+
+}
+
+@mixin shadow {
+    box-shadow: 0px 4px 4px 0 #00000025;
+}
+
+@mixin subtext {
+    color: #828282;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+@mixin body-margins-till-1440px {
+    @media(min-width:992px) {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@mixin body-margins-from-1440px {
+    @media(min-width:1440px) {
+        margin-right: 127px;
+        margin-left: 127px;
+    }
+}
+@mixin section-gap-in-small-screen{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@mixin section-gap-in-large-screen{
+    @media(min-width:992px){
+    margin-top: 100px;
+    margin-bottom: 100px;
+    }
+}
+
+@mixin container-modification{
+    max-width: max-content!important;
+}
+@mixin design-screen{
+    @media(min-width:1920px){
+        @content;
+    }
+}
+@mixin pricing_title{
+    font-size: 22px !important;
+    font-weight: 600;
+    color: $purple;
+    margin-bottom: 34px!important;
+}
+
+$purple: #6F77F1;
+$grey: #828282;
+$background-grey:#FAFAFA;

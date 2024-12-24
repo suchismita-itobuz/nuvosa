@@ -1,0 +1,181 @@
+nav,
+section {
+  max-width: 1920px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.custom-navbar-brand {
+  margin-left: 5%;
+  font-weight: 500;
+
+  @media (min-width: 992px) {
+    width: 10%;
+    margin: 0 !important;
+    margin-left: 100px !important;
+  }
+
+  @media (min-width: 1440px) {
+    width: 15%;
+    font-size: 40px !important;
+    margin-left: 127px !important;
+  }
+}
+
+.navbar {
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  @media (min-width: 992px) {
+    margin-bottom: 198px;
+    margin-top: 57px;
+  }
+}
+
+.custom-navbar-brand-dot {
+  color: #bc424e;
+  margin-left: 3px;
+
+  @media (min-width: 1440px) {
+    font-size: 30px;
+  }
+}
+
+.custom-navbar-menu {
+  gap: 1rem;
+  @media (min-width: 1440px) {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  @media (min-width: 1920px) {
+    gap: 67px;
+  }
+}
+
+.custom-navbar-toggler {
+  outline: 0;
+  box-shadow: none;
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.custom-navbar-menu-container {
+  //bootstrap equivalent: d-flex justify-content-between flex-column flex-lg-row justify-content-end
+  //using flex here as hamburger menu is not closing when i apply bootstrap class there.
+
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 992px) {
+    justify-content: end;
+    margin-right: 100px;
+    gap: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 127px;
+  }
+
+  @media (min-width: 1920px) {
+    gap: 155px;
+  }
+}
+
+.custom-navbar-form {
+  @media (min-width: 1920px) {
+    gap: 24px;
+  }
+}
+
+.navbar-search-bg {
+  @media (max-width: 991px) {
+    margin-top: 20px;
+  }
+
+  border-radius: 4%;
+  background-color: #fad725;
+  height: 44px;
+  width: 50px;
+
+  @media (min-width: 1440px) {
+    height: 56px;
+    width: 60px;
+  }
+
+  @media (min-width: 1920px) {
+    height: 77px;
+    width: 83px;
+  }
+}
+
+.custom-navbar-form-button {
+  color: #212528;
+  border: solid 3px #212528;
+  padding: 10px 25px !important;
+
+  @media (max-width: 991px) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 24px !important;
+  }
+
+  @media (min-width: 1920px) {
+    min-width: 200px;
+    padding: 20px 48px !important;
+  }
+}
+
+.custom-navbar-form .search-button {
+  padding: 0;
+}
+
+.custom-container {
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+}
+
+.custom-nav-link {
+  color: black !important;
+  position: relative;
+}
+
+.custom-nav-link:hover::before,
+.custom-nav-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: $purple;
+}
+
+.custom-nav-link::before {
+  left: 0;
+  transition: all 700ms;
+}
+
+.custom-nav-link::after {
+  right: 0;
+  transition: all 700ms;
+}
+
+.custom-nav-link:hover::before {
+  width: 70%;
+}
+
+.custom-nav-link:hover::after {
+  width: 20%;
+}

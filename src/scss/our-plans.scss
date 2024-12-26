@@ -8,6 +8,7 @@
   padding: 20px;
   background-color: white;
   transition: all 0.3s;
+  cursor: pointer;
   @include design-screen{
     width: 372px;
     height: 523px;
@@ -107,4 +108,37 @@
 }
 .pricing-card__text--last{
   margin-bottom: 0px!important;
+}
+
+.plans-b-rect,.plans-y-circle,.plans-g-rect,.plans-b-rect-1,.plans-y-circle-1{
+  display: none;
+  @include design-screen{
+    display: block;
+  }
+}
+
+
+@include design-screen{
+
+.plans-b-rect{
+  top: 146px;
+  left: 212px;
+
+}
+.plans-y-circle{
+  right: 193px;
+  bottom: 90px;
+}
+.plans-g-rect{
+  left: 482px;
+  bottom: -10px;
+}
+.plans-b-rect-1{
+right: 142.3px;
+bottom: -750px;
+}
+.plans-y-circle-1{
+  left: 293px;
+bottom: -900px;
+}
 }

@@ -11,7 +11,11 @@
     }
 }
 .why-choose__heading{
-    padding-top: 20px;
+    padding-top: 30px;
+    @media(min-width:1440px) and (max-width:1919px){
+        padding-top: 50px;
+    }
+    
     @include design-screen{
         padding-top: 79px;
     }
@@ -20,9 +24,6 @@
     @include button;
     margin-bottom: 58.12px;
     border-radius: 5% !important;
-    // @include design-screen{
-    //     margin-bottom: 58.12px;
-    // }
     font-weight: 600;
     padding: 12px 24px!important;
 
@@ -50,15 +51,6 @@
 .why-choose-col__image--opti{
     margin-top: 48px;
     margin-bottom: 39px;
-    // @media(min-width:768px){
-    // margin-bottom: 58.21px;
-    // }
-    // @media(min-width:1200px){
-    //     margin-bottom: 70px;
-    // }
-    // @media(min-width:1400px){
-    //     margin-bottom: 82.24px;
-    // }
     @include design-screen{
         padding: 0px 29px;
         padding-top: 46px;
@@ -70,10 +62,6 @@
     margin-top: 48px;
     margin-bottom: 39px;
     @media(min-width:768px){
-    // margin-bottom: 58.52px;
-    }
-    @media(min-width:1200px){
-        // margin-bottom: 70.38px;
     }
     @media(min-width:1400px){
         margin-bottom: 39px;
@@ -95,6 +83,8 @@
     height: max-content;
 }
 .why-choose__subheading{
+    padding-left: 30px;
+    padding-right: 30px;
     @include design-screen{
         width: 902px;
         margin: auto;
@@ -109,6 +99,9 @@
 .why-choose-row{
     @include design-screen{
         justify-content: center;
+    }
+    @media(min-width:768px) and (max-width:991px){
+        padding-bottom: 50px;
     }
 }
 .why-choose-col p{

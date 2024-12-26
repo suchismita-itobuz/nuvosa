@@ -1,3 +1,28 @@
+
+.grow-rect-1,.grow-rect-2,.grow-circle{
+display:none;
+}
+
+@include design-screen{
+.grow-rect-1{
+    display: block;
+    top: 39px;
+    right: 174.38px;
+}
+.grow-rect-2{
+    display: block;
+left: 519px;
+bottom: -46px;
+}
+.grow-circle{
+    display: block;
+ top: 15px;
+ left: 693px;
+}
+}
+
+
+
 .grow-container {
     @include section-gap-in-small-screen;
     @include section-gap-in-large-screen;

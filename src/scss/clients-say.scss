@@ -1,0 +1,81 @@
+.clients-say__heading{
+    h2{
+        @include section-headings;
+        text-transform: capitalize;
+        margin-bottom: 21px;
+    }
+    p{
+        @include subtext;
+        margin-bottom: 46px;
+        @include design-screen{
+            width: 501px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+.clients-say__content-wrapper{
+    min-width: 569px;
+    border: 2px solid #EFEFEF;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0px 34px 50px -17px #0216051A;
+
+    }
+}
+.clients-say__content-container{
+    overflow: hidden;
+    gap: 28px;
+    padding-bottom: 30px;
+}
+.clients-say__content-box--quotes{
+    top: 31px;
+    left: 28px;
+
+}
+.clients-say__content-box{
+    padding:41px 49px 33px 48px ;
+    
+}
+.clients-say__content-box--firstPara {
+    @include subtext;
+    padding-bottom: 21px;
+    @include design-screen{
+        width: 472px;
+    }
+}
+.clients-say__content-box--mainImage{
+    padding-bottom: 10px;
+}
+.clients-say__content-box--title{
+    font-weight: 600;
+}
+.clients-say__content-box--subtitle{
+    @include subtext;
+}
+.clients-say-circle{
+    width: 7px;
+    height: 7px;
+    background-color: #E9E9E9;
+   
+    border-radius: 50%;
+}
+.circle-row{
+    gap: 10px;
+    margin-bottom: 50px;
+    @media(min-width:992px){
+        margin-bottom: 100px;
+    }
+    @include design-screen{
+        margin-bottom: 249px;
+    }
+   
+}
+.clients-say-circle{
+    transition: all 0.3s;
+    &:hover{
+        transform: scale(2);
+        background-color: $purple;
+    }
+}

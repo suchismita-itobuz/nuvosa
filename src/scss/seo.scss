@@ -1,3 +1,36 @@
+
+.seo-g-rect-1,.seo-y-circle-1,.seo-b-rect,.seo-y-circle-2,.seo-g-rect-2{
+  display: none;
+  @include design-screen{
+    display: block;
+  }
+}
+
+@include design-screen{
+.seo-g-rect-1{
+  top: 139px;
+  left: 76px;
+  
+}
+.seo-y-circle-1{
+  left: 687px;
+  top: 785px;
+}
+.seo-b-rect{
+  top: 1309px;
+  right: 101px;
+}
+.seo-y-circle-2{
+  bottom: 470px;
+  left: 223px;
+}
+.seo-g-rect-2{
+  right: 193px;
+  bottom: -60px;
+}
+}
+
+
 .seo-col {
   h2 {
     @include section-headings;
@@ -15,6 +48,9 @@
   align-items: center;
 }
 .seo-col__content {
+  @media(max-width:1919px){
+    margin-top: 50px!important;
+  }
   @include design-screen {
     width: 754px !important;
     padding-top: 114px;
@@ -55,6 +91,9 @@
 }
 .seo-container {
   max-width: max-content !important;
+  @media(max-width:1919px){
+  
+  }
 }
 .seo-col__row--col--wrapper {
   gap: 1rem;
